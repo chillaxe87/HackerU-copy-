@@ -1,0 +1,123 @@
+
+.reasons-to-learn{
+    display: flex;
+    flex-direction: column;
+    background-image: url("Images/bg_4.png");
+    background-size: cover;
+    padding-bottom: 6rem;
+    padding-top: 50px;
+}
+.reasons-to-learn__container{
+    display: inherit;
+    flex-direction: column;
+    margin: auto;
+}
+.reason-to-learn__main{
+    margin: auto;
+    margin-bottom: 2rem;
+    max-width: 300px;
+    color: #333333;
+}
+.reason-to-learn__h3{
+     text-align: right;
+     font-size: 1.8rem;
+     font-family: inherit;
+     opacity: 0;
+     transform: translateY(3rem);
+}
+.reason-to-learn__h3-open{
+    text-align: right;
+    font-size: 1.8rem;
+    font-family: inherit;
+    opacity: 100%;
+    transform: translateY(0rem);
+    transition: opacity 1000ms, transform 1000ms;
+}
+.reason-to-learn__section{
+    display: flex;
+    flex-direction: column;
+    max-width: 300px;
+    margin: auto;
+    padding-bottom: 30px;
+    text-align: right;
+    justify-content: right;
+    opacity: 0;
+    transform: translateY(3rem);
+}
+.reason-to-learn__section-open{
+    opacity: 100%;
+    transform: translateY(0rem);
+    transition: opacity 1000ms, transform 1000ms;
+    display: flex;
+    flex-direction: column;
+    max-width: 300px;
+    margin: auto;
+    padding-bottom: 30px;
+    text-align: right;
+    justify-content: right;
+}
+.reason-to-learn__section-open img{
+    margin-left:auto;
+    margin-bottom: 5px;
+}
+.reason-to-learn__section-open h3{
+    font-family: inherit;
+    padding-bottom: 12px;
+    font-size: 20px;
+    font-weight: 600;
+    color: #333333;
+    direction: rtl;
+}
+.reason-to-learn__section-open p{
+    font-family: inherit;
+    padding-bottom: 12px;
+    font-size: 16px;
+    color: #333333;
+    direction: rtl;
+}
+.reason-to-learn__section-open a{
+    font-family: inherit;
+    padding-bottom: 12px;
+    font-size: 16px;
+    text-decoration: underline;
+}
+@media only screen and (min-width: 480px){
+    .reason-to-learn__main h3{
+        font-size: 2.3rem;
+    }
+}
+@media only screen and (min-width: 1000px){
+    .reasons-to-learn{
+        padding-top: 7rem;
+        background-size: initial;
+    }
+    .reasons-to-learn__container{
+        width: 940px;
+        display: grid;
+        grid-template-columns: auto auto;
+    }
+    .reason-to-learn__main{
+        max-width: 940px;
+        margin-right: 20px;
+        grid-column-start: 1;
+        grid-column-end: 3;
+    }
+    .reason-to-learn__main__open{
+        max-width: 940px;
+        margin-right: 20px;
+        grid-column-start: 1;
+        grid-column-end: 3;
+    }
+    .reason-to-learn__section-open{
+        margin-right: 20px;
+        display:grid;
+        grid-template-columns: 20% 80%;
+        max-width: 380px;
+        margin-top:0;
+    }
+    .reason-to-learn__section-open img{
+        grid-row-start:1;
+        grid-row-end: 4;
+        margin-top:15px;
+    }
+}

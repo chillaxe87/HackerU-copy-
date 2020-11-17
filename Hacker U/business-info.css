@@ -1,0 +1,67 @@
+
+.business-info{
+    padding: 0;
+    margin: 0;
+    background-color: #f5f8f9;
+}
+.business-info__container{
+    display: grid;
+    width:100%;
+    grid-template-columns: 25% 25% 25% 25%;
+    background-color: white;
+    box-shadow: 3px 3px 10px rgb(194, 194, 194);
+}
+.business-info h3{
+    font-size: 18px;
+    font-weight: 900;
+    color: #373737;
+    margin-bottom: 1rem;;
+    font-family: inherit;
+    padding-top: 20px;
+}
+.business-info p{
+    font-size: 16px;
+    margin-bottom: 0.8rem;;
+    font-family: inherit;
+    color: #373737;
+}
+.business-info a{
+    font-size: 13px;
+    margin-bottom: 1rem;
+    font-weight: 600;
+}
+.business-info__img{
+    display: inherit;
+    width: 100%;
+    margin-top: 1rem;
+    height: 3.5em;
+    padding-top: 20px;
+}
+.business-info__img img{
+    margin: auto;
+    display: inherit;
+}
+.business-info__sky{
+    background-color: rgb(250, 250, 255);
+    padding-bottom: 10px;
+}
+@media only screen and (min-width: 1000px){
+    .business-info__container{
+        margin: auto;
+        max-width: 940px;
+        grid-template-columns: 140px auto 140px auto;
+
+        position: relative;
+        bottom: -4rem;
+    }
+    .business-info p{
+        font-size: 12px;
+        margin-bottom: 0;
+    }
+    .business-info h3{
+        margin-bottom: 0;
+    }
+    .business-info a{
+        font-size: 10px;
+    }
+}
